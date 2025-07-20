@@ -1,9 +1,8 @@
 # SE-LAB-HW1
 
-Of course. Here is the corrected breakdown with the feature name clearly listed for each task.
+Of course. Here is the updated task list, now including the "Backspace/Delete Button" feature and its tasks distributed to the correct branches.
 
-### Branch: `feature/html-layout` 🏗
-
+### Branch: `feature/html-layout` 
 This branch focuses on creating the entire static structure of the calculator.
 
 * **Feature: Project Setup** - Create the main `index.html` file and link the CSS/JS files.
@@ -13,11 +12,9 @@ This branch focuses on creating the entire static structure of the calculator.
 * **Feature: Equals Button** - HTML Task: Create the `<button>` for the equals sign (=).
 * **Feature: All Clear (AC) Button** - HTML Task: Create the `<button>` for "AC".
 * **Feature: Decimal Point Button** - HTML Task: Create the `<button>` for the decimal point (.).
-
----
+* **Feature: Backspace/Delete Button** - HTML Task: Create the `<button>` for "DEL".
 
 ### Branch: `feature/css-styling` 
-
 This branch focuses purely on the visual appearance and layout.
 
 * **Feature: General Styling** - CSS Task: Style the main calculator grid and container.
@@ -26,10 +23,7 @@ This branch focuses purely on the visual appearance and layout.
 * **Feature: Basic Operator Buttons** - CSS Task: Style the operator buttons with a distinct color.
 * **Feature: Equals Button** - CSS Task: Give the equals button a unique, prominent style.
 
----
-
-### Branch: `feature/js-logic` ⚙
-
+### Branch: `feature/js-logic` 
 This branch focuses on making the calculator functional.
 
 * **Feature: Number Buttons** - JS Task: Write the function that appends the clicked number to the display.
@@ -38,3 +32,4 @@ This branch focuses on making the calculator functional.
 * **Feature: Equals Button** - JS Task: Handle edge cases like division by zero within the `calculate()` function.
 * **Feature: All Clear (AC) Button** - JS Task: Write the `clear()` function to reset all variables and the display.
 * **Feature: Decimal Point Button** - JS Task: Write the logic to add a decimal and prevent multiple decimals in one number.
+* **Feature: Backspace/Delete Button** - JS Task: Write a function to remove the last character from the current number on the display.
