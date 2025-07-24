@@ -12,5 +12,9 @@ buttons.forEach(button => {
         if (buttonText === 'AC') {
             display.value = '';
         }
+
+        if (buttonText === '⌫') {
+            display.value = display.value.slice(0, -1);
+        }
     });
 });
