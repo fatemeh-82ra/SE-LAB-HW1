@@ -1,5 +1,4 @@
 const display = document.querySelector('#display');
-
 const buttons = document.querySelectorAll('button');
 
 buttons.forEach(button => {
@@ -8,6 +7,10 @@ buttons.forEach(button => {
 
         if (buttonText >= '0' && buttonText <= '9' || buttonText === '.') {
             display.value += buttonText;
+        }
+
+        if (buttonText === 'AC') {
+            display.value = '';
         }
     });
 });
