@@ -78,9 +78,9 @@ Workflow ما بر اساس یک استراتژی چند-شاخه‌ای بود:
   * <img width="1332" height="2443" alt="image" src="https://github.com/user-attachments/assets/e57dc54e-1d6d-480c-9d04-cbaad1208cec" />
   * **develop:** شاخه اصلی یکپارچه‌سازی ما. تمام شاخه‌های ویژگی (feature branches) پس از بازبینی به این شاخه ادغام می‌شوند. در اینجا باگ‌های برنامه را نیز رفع میکنیم.
   * **feature/\*:** هر ویژگی جدید (مانند `feature/html-layout` یا `feature/js-logic`) در شاخه اختصاصی خود توسعه داده شد. این کار باعث جداسازی کارها و ساده‌سازی بازبینی کد شد.
-  ** **feature/css-styling:** این شاخه صرفاً بر ظاهر بصری و چیدمان تمرکز دارد.
-  ** **feature/html-layout:** این شاخه بر ایجاد ساختار کامل استاتیک ماشین‌حساب تمرکز دارد.
-  ** **feature/js-logic:** این شاخه بر کاربردی کردن ماشین‌حساب تمرکز دارد.
+      * **feature/css-styling:** این شاخه صرفاً بر ظاهر بصری و چیدمان تمرکز دارد.
+      * **feature/html-layout:** این شاخه بر ایجاد ساختار کامل استاتیک ماشین‌حساب تمرکز دارد.
+      * **feature/js-logic:** این شاخه بر کاربردی کردن ماشین‌حساب تمرکز دارد.
 #### **دستورات گیت استفاده‌شده**
 
 در طول پروژه، ما به صورت دستی از دستورات اصلی زیر در گیت استفاده کردیم:
@@ -113,6 +113,8 @@ git pull origin [branch-name]
 # ادغام یک شاخه دیگر در شاخه فعلی شما
 git merge [branch-name]
 در شکل‌هابی پاینن میتوانیم ذستورات استفاده شده را ببینیم:
+
+```
 <img width="1264" height="856" alt="Screenshot (2331)" src="https://github.com/user-attachments/assets/0b4c73c5-3320-4e40-989b-69fe327781a4" />
 <img width="1255" height="857" alt="Screenshot (2332)" src="https://github.com/user-attachments/assets/febc1720-5162-430c-9716-67865a524113" />
 <img width="1920" height="1080" alt="Screenshot (2377)" src="https://github.com/user-attachments/assets/c02cf696-f2ee-4ee5-992c-d0eda1c03c74" />
@@ -122,8 +124,6 @@ git merge [branch-name]
 <img width="1920" height="1080" alt="Screenshot (2402)" src="https://github.com/user-attachments/assets/ede800f0-471e-4b1d-84ce-e3b06a76811b" />
 <img width="1920" height="1080" alt="Screenshot (2403)" src="https://github.com/user-attachments/assets/80c743e1-4935-401c-8aa9-a37a9c1d4037" />
 
-
-```
 
 #### **پول ریکوئست‌ها (Pull Requests)**
 
@@ -155,7 +155,7 @@ git merge [branch-name]
 (در اینجا یک اسکرین‌شات از تنظیمات GitHub Pages خود اضافه کنید)
 <img width="1920" height="1026" alt="Screenshot (2370)" src="https://github.com/user-attachments/assets/294f8d7e-4b86-4e59-ba34-bfc44c1e20b7" />
 
-این کار یک فایل Workflow (`.github/workflows/static.yml`) ایجاد کرد که فرآیند استقرار را تعریف می‌کند. این گردش کار با هر بار `push` به شاخه `main` فعال می‌شود. (شاخه dev را نیز به فایل اضافه کردیم):
+این کار یک فایل Workflow (`.github/workflows/static.yml`) ایجاد کرد که فرآیند استقرار را تعریف می‌کند. این workflow با هر بار `push` به شاخه `main` فعال می‌شود. (شاخه dev را نیز به فایل اضافه کردیم):
 <img width="684" height="791" alt="image" src="https://github.com/user-attachments/assets/034bf1a6-5256-42ec-9a9b-9111da7a5af6" />
 
 
@@ -189,6 +189,7 @@ git merge [branch-name]
   * ابتدا صفحه نمایش و تمام دکمه‌ها را از DOM انتخاب می‌کند.
   * یک `event listener` single  با استفاده از حلقه `forEach` به تمام دکمه‌ها متصل می‌شود. این روش کارآمد است زیرا از ایجاد شنونده‌های جداگانه برای هر دکمه جلوگیری می‌کند.
   * در داخل listener، یک بلوک `if/else if` محتوای متنی (`textContent`) دکمه کلیک‌شده را بررسی می‌کند تا عمل مورد نظر را تعیین کند:
+      
       * **'AC'**: نمایشگر را پاک می‌کند.
       * **'⌫'**: آخرین کاراکتر را از رشته نمایشگر حذف می‌کند.
       * **'±'**: علامت عدد را تغییر می‌دهد (مثبت/منفی).
