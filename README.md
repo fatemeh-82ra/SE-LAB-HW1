@@ -1,37 +1,172 @@
-# SE-LAB-HW1
 
-## Branch: `feature/html-layout` 
-This branch focuses on creating the entire static structure of the calculator.
+### **پروژه: ماشین‌حساب و CI/CD**
 
-* **Feature: Project Setup** - Create the main `index.html` file and link the CSS/JS files.
-* **Feature: Calculator Display** - HTML Task: Create a `div` element for the screen.
-* **Feature: Number Buttons** - HTML Task: Create the 10 `<button>` elements for numbers (0-9).
-* **Feature: Basic Operator Buttons** - HTML Task: Create the 4 `<button>` elements for operators (+, -, \*, /).
-* **Feature: Equals Button** - HTML Task: Create the `<button>` for the equals sign (=).
-* **Feature: All Clear (AC) Button** - HTML Task: Create the `<button>` for "AC".
-* **Feature: Decimal Point Button** - HTML Task: Create the `<button>` for the decimal point (.).
-* **Feature: Backspace/Delete Button** - HTML Task: Create the `<button>` for "DEL".
-* **Feature: Positive/Negative Toggle (+/-)** - HTML Task: Create the `<button>` for "+/-".
+این پروژه یک ماشین‌حساب کاربردی تحت وب است که توسط تیم ما به منظور تمرین و نمایش یک workflow و با **Git** ساخته شده است. اهداف اصلی این پروژه، مدیریت فرآیند توسعه با استفاده از شاخه‌های ویژگی (feature branches)، حل تداخل‌ها (conflicts) و پیاده‌سازی یک CI/CD** با استفاده از **GitHub Actions** برای استقرار خودکار برنامه بر روی **GitHub Pages** بود.
 
-***
-## Branch: `feature/css-styling`
-This branch focuses purely on the visual appearance and layout.
+**اعضای تیم:**
 
-* **Feature: General Styling** - CSS Task: Style the main calculator grid and container.
-* **Feature: Calculator Display** - CSS Task: Style the screen (background, text alignment, font).
-* **Feature: Number Buttons** - CSS Task: Style the number buttons (color, size, hover effects).
-* **Feature: Basic Operator Buttons** - CSS Task: Style the operator buttons with a distinct color.
-* **Feature: Equals Button** - CSS Task: Give the equals button a unique, prominent style.
+  * فاطمه لاجوردی:
+  * هانیه میرعمادی:
+  * فاطمه خجسته: 99170394
 
-***
-## Branch: `feature/js-logic` 
-This branch focuses on making the calculator functional.
+**آدرس برنامه live:**
+[آدرس صفحه گیت‌هاب استقرار یافته شما در اینجا]
 
-* **Feature: Number Buttons** - JS Task: Write the function that appends the clicked number to the display.
-* **Feature: Basic Operator Buttons** - JS Task: Write the function to store the first number and the chosen operation.
-* **Feature: Equals Button** - JS Task: Write the main `calculate()` function that performs the arithmetic.
-* **Feature: Equals Button** - JS Task: Handle edge cases like division by zero within the `calculate()` function.
-* **Feature: All Clear (AC) Button** - JS Task: Write the `clear()` function to reset all variables and the display.
-* **Feature: Decimal Point Button** - JS Task: Write the logic to add a decimal and prevent multiple decimals in one number.
-* **Feature: Backspace/Delete Button** - JS Task: Write a function to remove the last character from the current number on the display.
-* **Feature: Positive/Negative Toggle (+/-)** - JS Task: Write a function to toggle the current number's sign.
+-----
+
+## ۱. مدیریت پروژه با GitHub Projects (کانبان)
+
+برای مدیریت فرآیند توسعه، ما از **GitHub Projects** برای ایجاد یک بورد کانبان (Kanban) استفاده کردیم. این ابزار به ما اجازه داد تا workflow خود را به صورت بصری مشاهده کنیم، وضعیت ویژگی‌ها را پیگیری کرده و وظایف را به طور بهتر تخصیص دهیم.
+
+بورد ما شامل ستون‌های زیر بود:
+
+  * **بک‌لاگ (Backlog):** تمام ویژگی‌ها و وظایفی که باید انجام شوند.
+  * **آماده (Ready):** وظایفی که آماده انتخاب توسط یکی از اعضای تیم هستند.
+  * **در حال انجام (In Progress):** وظایفی که در حال حاضر روی آن‌ها کار می‌شود.
+  * **در حال بازبینی (In Review):** کارهای تکمیل‌شده که به عنوان یک Pull Request ارسال شده و منتظر بازبینی هستند.
+  * **انجام‌شده (Done):** وظایفی که بازبینی و ادغام (merge) شده‌اند.
+
+#### **راه‌اندازی اولیه بک‌لاگ:**
+
+ما کار را با افزودن تمام ویژگی‌های لازم برای ماشین‌حساب به ستون بک‌لاگ شروع کردیم. همچنین برای هر ویژگی تسک مربوطه را نیز اضافه کردیم. هر تسک الویت و Estimator مربوطه را اضافه کردیم.
+
+<img width="1920" height="1038" alt="Screenshot (2336)" src="https://github.com/user-attachments/assets/b05ec44e-caeb-400e-862e-f47fc37126a8" />
+
+#### **پیگیری پیشرفت:**
+
+همان‌طور که کار می‌کردیم، وظایف در طول بورد جابجا می‌شدند و به ما یک نمای کلی و واضح از وضعیت پروژه در هر لحظه می‌دادند. عکس از مراحل انجام آن به طور کامل و پیوسته نگرفتیم اما از طریق merge requests و در بخش insight قابل مشاهده است. در عکس‌های پایین میتوانین پیشرفت را ببینین:
+
+<img width="1920" height="1026" alt="Screenshot (2369)" src="https://github.com/user-attachments/assets/9d016552-8389-4f1c-b0ff-ad50840dee02" />
+<img width="1919" height="1038" alt="Screenshot (2406)" src="https://github.com/user-attachments/assets/f448957a-bdf2-4f87-bced-481284d49d15" />
+<img width="1920" height="1039" alt="Screenshot (2399)" src="https://github.com/user-attachments/assets/ea157a52-40d3-4e08-b366-db580fc42fb1" />
+<img width="1919" height="1029" alt="Screenshot (2398)" src="https://github.com/user-attachments/assets/9d24099f-82bb-41a3-ac1b-ab64cc948064" />
+<img width="1920" height="1027" alt="Screenshot (2397)" src="https://github.com/user-attachments/assets/6dab0c01-4b04-4a50-8e14-54969eea1b10" />
+<img width="1920" height="1036" alt="Screenshot (2395)" src="https://github.com/user-attachments/assets/3f74ca25-ce49-4f7a-8635-0ff83c4da774" />
+<img width="1920" height="1036" alt="Screenshot (2384)" src="https://github.com/user-attachments/assets/4d3e62b9-b13b-4281-b35f-3408c331bdbd" />
+<img width="1920" height="1033" alt="Screenshot (2381)" src="https://github.com/user-attachments/assets/fca2e381-057c-469a-84d5-de6082d3b3e9" />
+<img width="1920" height="1029" alt="Screenshot (2380)" src="https://github.com/user-attachments/assets/be97a2dc-39c9-4df8-b7b5-0f047138345b" />
+<img width="1920" height="1036" alt="Screenshot (2379)" src="https://github.com/user-attachments/assets/e0d541d5-42f5-4104-8a50-502d5b93ead3" />
+<img width="1920" height="1045" alt="Screenshot (2375)" src="https://github.com/user-attachments/assets/ef068cea-11f0-456b-8eee-3f4e62108ce2" />
+<img width="1920" height="1033" alt="Screenshot (2374)" src="https://github.com/user-attachments/assets/62ecf6c8-5015-4461-b783-c0e830b91995" />
+<img width="1920" height="1039" alt="Screenshot (2372)" src="https://github.com/user-attachments/assets/fd861210-cc11-4118-bd31-c47fc82787aa" />
+<img width="1920" height="1026" alt="Screenshot (2369)" src="https://github.com/user-attachments/assets/17f6d7a2-7dac-4122-afa4-90efce7837af" />
+
+
+
+-----
+
+## ۲. گردش کار مشترک با گیت (Collaborative Git Workflow)
+
+ما از یک گردش کار ساختاریافته **Git** پیروی کردیم تا کیفیت کد را تضمین کنیم، از بروز مشکلات جلوگیری کرده و به صورت موازی کار کنیم.
+
+#### **افزودن همکاران (Contributors)**
+
+صاحب مخزن (repository) ابتدا سایر اعضای تیم را به عنوان همکار (collaborator) اضافه کرد تا به آن‌ها دسترسی نوشتن (write access) بدهد. این کار در مسیر `Settings > Collaborators` انجام شد.
+(در اینجا یک اسکرین‌شات از صفحه همکاران اضافه کنید)
+
+#### **استراتژی شاخه‌سازی (Branching)**
+
+گردش کار ما بر اساس یک استراتژی چند-شاخه‌ای بود:
+
+  * **main:** این شاخه محافظت‌شده است و فقط شامل کدهای پایدار و آماده برای استقرار نهایی (production-ready) است. هرگونه ادغام در شاخه `main` باعث اجرای خودکار فرآیند استقرار می‌شود.
+  * **develop:** شاخه اصلی یکپارچه‌سازی ما. تمام شاخه‌های ویژگی (feature branches) پس از بازبینی به این شاخه ادغام می‌شوند.
+  * **feature/\*:** هر ویژگی جدید (مانند `feature/html-layout` یا `feature/js-logic`) در شاخه اختصاصی خود توسعه داده شد. این کار باعث جداسازی کارها و ساده‌سازی بازبینی کد شد.
+  * **hotfix/\*:** رفع باگ‌های فوری در شاخه‌های `hotfix` انجام می‌شد.
+
+#### **دستورات گیت استفاده‌شده**
+
+در طول پروژه، ما به صورت دستی از دستورات اصلی زیر در گیت استفاده کردیم:
+
+```bash
+# کلون کردن مخزن
+git clone [URL]
+
+# ایجاد یک شاخه جدید
+git branch [branch-name]
+
+# جابجایی به یک شاخه
+git checkout [branch-name]
+
+# ایجاد و جابجایی به یک شاخه جدید در یک مرحله
+git checkout -b [branch-name]
+
+# افزودن تغییرات به مرحله آماده‌سازی برای کامیت
+git add [file-name]
+
+# کامیت کردن تغییرات آماده‌شده
+git commit -m "پیام توصیفی شما"
+
+# ارسال یک شاخه محلی به مخزن ریموت
+git push -u origin [branch-name]
+
+# دریافت آخرین تغییرات از مخزن ریموت
+git pull origin [branch-name]
+
+# ادغام یک شاخه دیگر در شاخه فعلی شما
+git merge [branch-name]
+```
+
+#### **پول ریکوئست‌ها (Pull Requests)**
+
+تمام کدها از طریق **Pull Request (PR)** به شاخه `develop` ادغام می‌شدند. این کار یک فرآیند بازبینی کد (code review) را اجباری می‌کرد که در آن حداقل یک عضو دیگر تیم باید تغییرات را تأیید می‌کرد.
+
+**ایجاد یک Pull Request:**
+وقتی کار روی یک شاخه ویژگی تمام می‌شد، ما یک PR در گیت‌هاب باز می‌کردیم تا آن را در شاخه `develop` ادغام کنیم.
+(در اینجا یک اسکرین‌شات از ایجاد یک پول ریکوئست اضافه کنید)
+
+**ادغام یک Pull Request:**
+پس از یک بازبینی موفق، PR ادغام می‌شد.
+(در اینجا یک اسکرین‌شات از یک پول ریکوئست ادغام‌شده اضافه کنید)
+
+#### **حل تداخل (Conflict Resolution)**
+
+ما به طور عمدی یک تداخل ادغام (merge conflict) ایجاد و آن را حل کردیم. این اتفاق زمانی رخ داد که دو شاخه (`feature/html-layout` و `feature/js-logic`) هر دو سعی داشتند یک خط مشابه را در فایل `index.html` برای افزودن تگ اسکریپت تغییر دهند. ما این تداخل را به صورت محلی با دریافت آخرین تغییرات شاخه `develop`، اصلاح نشانگرهای تداخل (`<<<<<<<`, `=======`, `>>>>>>>`) در کد و سپس کامیت کردن ادغام، حل کردیم.
+(در اینجا یک اسکرین‌شات از نشانگرهای تداخل در ویرایشگر کد خود اضافه کنید)
+
+-----
+
+## ۳. استقرار مداوم با گیت‌هاب اکشنز (GitHub Actions)
+
+ما یک خط لوله **CI/CD** پیاده‌سازی کردیم تا برنامه خود را به صورت خودکار در **GitHub Pages** مستقر کنیم.
+
+#### **پیکربندی گردش کار (Workflow)**
+
+ما مخزن را طوری پیکربندی کردیم که از GitHub Actions برای استقرار استفاده کند. این کار از مسیر `Settings > Pages` انجام شد.
+(در اینجا یک اسکرین‌شات از تنظیمات GitHub Pages خود اضافه کنید)
+این کار یک فایل گردش کار (`.github/workflows/static.yml`) ایجاد کرد که فرآیند استقرار را تعریف می‌کند. این گردش کار با هر بار `push` به شاخه `main` فعال می‌شود.
+
+#### **استقرار در عمل**
+
+هنگامی که یک Pull Request در شاخه `main` ادغام می‌شود، Action به طور خودکار اجرا شده و آخرین نسخه کد را مستقر می‌کند.
+(در اینجا یک اسکرین‌شات از صفحه استقرار موفق به همراه آدرس زنده برنامه اضافه کنید)
+
+-----
+
+## ۴. بررسی کلی کد
+
+این برنامه با استفاده از HTML، CSS و JavaScript استاندارد ساخته شده است.
+
+#### **index.html**
+
+این فایل ساختار کامل ماشین‌حساب را فراهم می‌کند. از یک عنصر `<form>` برای دربرگرفتن نمایشگر (`<input type="text">`) و تمام دکمه‌ها (`<button>`) استفاده شده است که در گروه‌های منطقی `<fieldset>` سازماندهی شده‌اند.
+
+#### **style.css**
+
+این فایل تمام استایل‌دهی را انجام می‌دهد. از `Flexbox` و `Grid` برای موقعیت‌دهی اجزای ماشین‌حساب استفاده می‌کند. ویژگی‌های کلیدی عبارتند از:
+
+  * یک طرح‌بندی تمیز و متمرکز.
+  * دکمه‌های گرد با افکت `hover` برای تجربه کاربری بهتر.
+  * رنگ‌های متمایز برای دکمه‌های عملگر تا از نظر بصری از دکمه‌های عددی جدا شوند.
+
+#### **calculator.js**
+
+این فایل منطق اصلی برنامه است.
+
+  * ابتدا صفحه نمایش و تمام دکمه‌ها را از DOM انتخاب می‌کند.
+  * یک `event listener` واحد با استفاده از حلقه `forEach` به تمام دکمه‌ها متصل می‌شود. این روش کارآمد است زیرا از ایجاد شنونده‌های جداگانه برای هر دکمه جلوگیری می‌کند.
+  * در داخل شنونده، یک بلوک `if/else if` محتوای متنی (`textContent`) دکمه کلیک‌شده را بررسی می‌کند تا عمل مورد نظر را تعیین کند:
+      * **'AC'**: نمایشگر را پاک می‌کند.
+      * **'⌫'**: آخرین کاراکتر را از رشته نمایشگر حذف می‌کند.
+      * **'±'**: علامت عدد را تغییر می‌دهد (مثبت/منفی).
+      * **'='**: از تابع `eval()` برای محاسبه عبارت ریاضی در نمایشگر استفاده می‌کند. `eval()` در این پروژه برای سادگی استفاده شده است، اما به دلیل خطرات امنیتی باید از استفاده آن در برنامه‌های واقعی با ورودی کاربر خودداری کرد.
+      * کلیک روی هر دکمه دیگر، متن آن را به نمایشگر اضافه می‌کند.
