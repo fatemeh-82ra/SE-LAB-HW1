@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <script src="calculator.js"></script>
-    <title>Calculator</title>
+  <meta charset="UTF-8">
+  <script src="calculator.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
 </head>
+
 <body>
-<h1>Calculator</h1>
-    <form>
-        <input type="text" name="display" id="display" disabled /><br><br>
-        
-   <fieldset>
+  <form class="calculator">
+  <div class="top-section">
+    <input type="text" name="display" id="display" disabled />
+
+    <fieldset class="tools">
       <legend>ابزارها</legend>
       <button type="button">AC</button>
-      <button type="button">⌫</button>
       <button type="button">(</button>
       <button type="button">)</button>
       <button type="button">±</button>
       <button type="button">%</button>
-    </fieldset><br>
+    </fieldset>
 
-    <fieldset>
-      <legend>اعداد و نقطه</legend>
+    <fieldset class="numbers">
+      <legend>اعداد</legend>
       <button type="button">7</button>
       <button type="button">8</button>
-      <button type="button">9</button><br>
-
+      <button type="button">9</button>
       <button type="button">4</button>
       <button type="button">5</button>
-      <button type="button">6</button><br>
-
+      <button type="button">6</button>
       <button type="button">1</button>
       <button type="button">2</button>
-      <button type="button">3</button><br>
-
-      <button type="button">0</button>
+      <button type="button">3</button>
+      <button type="button" style="grid-column: span 2;">0</button>
       <button type="button">.</button>
-    </fieldset><br>
-
-    <fieldset>
-      <legend>عملگرها</legend>
-      <button type="button">/</button>
-      <button type="button">*</button>
-      <button type="button">-</button>
-      <button type="button">+</button>
-      <button type="button">=</button>
     </fieldset>
-  </form>
-<script src="calculator.js" defer></script>
+  </div>
+
+  <fieldset class="operators">
+    <legend>عملگرها</legend>
+    <button type="button">⌫</button>
+    <button type="button">/</button>
+    <button type="button">*</button>
+    <button type="button">-</button>
+    <button type="button">+</button>
+    <button type="button">=</button>
+  </fieldset>
+</form>
+
+
+  <script src="calculator.js" defer></script>
 </body>
+
 </html>
