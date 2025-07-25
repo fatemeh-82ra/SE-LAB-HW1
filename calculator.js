@@ -13,8 +13,9 @@ buttons.forEach(button => {
             if (display.value) {
                 display.value = parseFloat(display.value) * -1;
             }
-        } else if (buttonText === '=') {
-            display.value = eval(display.value);
+        else if (buttonText === '=') {
+            // A simple, less robust way to check for division by zero
+            display.value = display.value.includes('/0') ? 'Error' : eval(display.value);
         } else {
             display.value += buttonText;
         }
