@@ -13,16 +13,16 @@ buttons.forEach(button => {
             if (display.value) {
                 display.value = parseFloat(display.value) * -1;
             }
-            else if (buttonText === '=') {
-                try {
-                    // A more robust way to check for division by zero
-                    if (display.value.includes('/0')) {
-                        throw new Error("Division by zero");
-                    }
-                    display.value = eval(display.value);
-                } catch (e) {
-                    display.value = 'Error';
+        } else if (buttonText === '=') {
+            try {
+                // A more robust way to check for division by zero
+                if (display.value.includes('/0')) {
+                    throw new Error("Division by zero");
                 }
+                display.value = eval(display.value);
+            } catch (e) {
+                display.value = 'Error';
+            }
         } else {
             display.value += buttonText;
         }
