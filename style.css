@@ -69,7 +69,8 @@ button {
   background: #e0e0e0;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s ease-in-out;
+
 }
 
 .operators button {
@@ -84,4 +85,10 @@ button {
 
 legend {
   display: none;
+}
+
+.numbers button:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
