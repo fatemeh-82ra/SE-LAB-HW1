@@ -10,7 +10,7 @@
   * فاطمه خجسته: 99170394 - Java Scrpt
 
 **آدرس برنامه live:**
-  * [https://github.com/fatemeh-82ra/SE-LAB-HW1]
+  * [https://fatemeh-82ra.github.io/SE-LAB-HW1/]
 
 -----
 
