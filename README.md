@@ -140,8 +140,13 @@ git merge [branch-name]
 
 #### **حل تداخل (Conflict Resolution)**
 
-ما به طور عمدی یک تداخل ادغام (merge conflict) ایجاد و آن را حل کردیم. این اتفاق زمانی رخ داد که دو شاخه (`feature/html-layout` و `feature/js-logic`) هر دو سعی داشتند یک خط مشابه را در فایل `index.html` برای افزودن تگ اسکریپت تغییر دهند. ما این تداخل را به صورت محلی با دریافت آخرین تغییرات شاخه `develop`، اصلاح نشانگرهای تداخل (`<<<<<<<`, `=======`, `>>>>>>>`) در کد و سپس کامیت کردن ادغام، حل کردیم.
-(در اینجا یک اسکرین‌شات از نشانگرهای تداخل در ویرایشگر کد خود اضافه کنید)
+کانفلیکت اول:
+در هنگام آپدیت کردن قسمت calculator به کانفلیکت خوردیم:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/22d32f5a-66c9-48f2-9abb-5fffb118f755" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dea78dbe-649c-4577-9773-a9e05e3a5d0c" />
+یکی از تغییرات را اعمال میکنیم:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e89bd58c-bc68-4497-81ce-051c8fd8cd0d" />
+
 
 -----
 
