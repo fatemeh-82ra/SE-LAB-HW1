@@ -1,5 +1,5 @@
-\<div dir="rtl"\>
-### **پروژه: ماشین‌حساب و CI/CD**
+<div dir="rtl">
+# **پروژه: ماشین‌حساب و CI/CD**
 
 این پروژه یک ماشین‌حساب کاربردی تحت وب است که توسط تیم ما به منظور تمرین و نمایش یک workflow و با **Git** ساخته شده است. اهداف اصلی این پروژه، مدیریت فرآیند توسعه با استفاده از شاخه‌های ویژگی (feature branches)، حل تداخل‌ها (conflicts) و پیاده‌سازی یک CI/CD** با استفاده از **GitHub Actions** برای استقرار خودکار برنامه بر روی **GitHub Pages** بود.
 
@@ -222,9 +222,9 @@ git merge [branch-name]
 <img width="1920" height="1024" alt="470919219-cecb185f-d0a5-48b8-8682-c091684558f1" src="https://github.com/user-attachments/assets/9e39ceec-a873-48e0-a979-28224f65262f" />
 <img width="1920" height="1049" alt="470919382-7bf8c683-6475-4dfa-9e69-5f3e7776d995" src="https://github.com/user-attachments/assets/635fde22-3e95-4000-9b69-e0f9e1adb518" />
 
-\</div\>
 
 
+</div>
 
 <div dir="rtl">
 
