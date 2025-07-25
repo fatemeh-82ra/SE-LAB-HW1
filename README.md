@@ -135,8 +135,15 @@ git merge [branch-name]
 
 
 
-**مرج کردن یک Pull Request:**
-پس از یک reveiw موفق، PR مرج می‌شد.
+**مرج کردن نهایی Pull Request:**
+در آخر برنچ dev را روی برنچ main مرج میکنیم:
+<img width="1300" height="734" alt="image" src="https://github.com/user-attachments/assets/ca7892cc-acdb-4912-9617-683a86948365" />
+<img width="1294" height="2816" alt="image" src="https://github.com/user-attachments/assets/311a93b0-8907-470d-bd00-bd4efcb355d4" />
+<img width="1327" height="2269" alt="image" src="https://github.com/user-attachments/assets/f617a943-8823-4f60-b88d-281251fe29a0" />
+<img width="1876" height="1228" alt="image" src="https://github.com/user-attachments/assets/b7e8fc01-9c76-45d2-a4cc-1bea5a891118" />
+<img width="1899" height="644" alt="image" src="https://github.com/user-attachments/assets/4f737364-6dc7-4b3c-b1c6-62d0f5f5db17" />
+<img width="1906" height="682" alt="image" src="https://github.com/user-attachments/assets/6b43272d-65cd-46a0-b66b-5bac9e0dafb2" />
+
 
 #### **حل تداخل (Conflict Resolution)**
 
@@ -146,6 +153,15 @@ git merge [branch-name]
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dea78dbe-649c-4577-9773-a9e05e3a5d0c" />
 یکی از تغییرات را اعمال میکنیم:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e89bd58c-bc68-4497-81ce-051c8fd8cd0d" />
+کانفلیکت دوم:
+در هنگام آپدیت کردن قسمت stules به کانفلیکت خوردیم:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fb4f1f81-a8cd-48e0-9cf2-a323bca8d561" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6fdfae75-fe53-481a-93c4-f95d37a2b7c4" />
+
+
+یکی از تغییرات را اعمال میکنیم:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d88e61c4-f878-4470-85a0-62c4289b54b1" />
+
 
 
 -----
@@ -200,3 +216,8 @@ git merge [branch-name]
       * **'±'**: علامت عدد را تغییر می‌دهد (مثبت/منفی).
       * **'='**: از تابع `eval()` برای محاسبه عبارت ریاضی در نمایشگر استفاده می‌کند. `eval()` در این پروژه برای سادگی استفاده شده است.
       * کلیک روی هر دکمه دیگر، متن آن را به نمایشگر اضافه می‌کند.
+      * 
+#### **خروجی کد**
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cecb185f-d0a5-48b8-8682-c091684558f1" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7bf8c683-6475-4dfa-9e69-5f3e7776d995" />
+
