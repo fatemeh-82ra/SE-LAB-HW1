@@ -65,6 +65,9 @@
 صاحب(همان PO) repository ابتدا سایر اعضای تیم را به عنوان collaborator اضافه کرد تا به آن‌ها دسترسی نوشتن (write access) بدهد. این کار در مسیر `Settings > Collaborators` انجام شد.
 <img width="1476" height="723" alt="image" src="https://github.com/user-attachments/assets/ad2a3bb2-efac-438e-8bbf-a4c32aca88fb" />
 
+#### **اضافه کردن gitignore**
+چون از WEBSTORM IDE استفاده کردیم خودش به طور خودکار فایل gitignore را ایجاد کرد:
+<img width="1368" height="611" alt="image" src="https://github.com/user-attachments/assets/c4020449-bf7a-4f25-8ffc-d7490a70f80f" />
 
 #### **استراتژی Branching**
 
@@ -75,10 +78,10 @@ Workflow ما بر اساس یک استراتژی چند-شاخه‌ای بود:
   * <img width="1332" height="2443" alt="image" src="https://github.com/user-attachments/assets/e57dc54e-1d6d-480c-9d04-cbaad1208cec" />
   * **develop:** شاخه اصلی یکپارچه‌سازی ما. تمام شاخه‌های ویژگی (feature branches) پس از بازبینی به این شاخه ادغام می‌شوند. در اینجا باگ‌های برنامه را نیز رفع میکنیم.
   * **feature/\*:** هر ویژگی جدید (مانند `feature/html-layout` یا `feature/js-logic`) در شاخه اختصاصی خود توسعه داده شد. این کار باعث جداسازی کارها و ساده‌سازی بازبینی کد شد.
-  * 
-#### **l**
-
-
+  ** **feature/css-styling:** این شاخه صرفاً بر ظاهر بصری و چیدمان تمرکز دارد.
+  ** **feature/html-layout:** این شاخه بر ایجاد ساختار کامل استاتیک ماشین‌حساب تمرکز دارد.
+  ** **feature/js-logic:** این شاخه بر کاربردی کردن ماشین‌حساب تمرکز دارد.
+#### **دستورات گیت استفاده‌شده**
 
 در طول پروژه، ما به صورت دستی از دستورات اصلی زیر در گیت استفاده کردیم:
 
